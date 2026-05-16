@@ -16,7 +16,11 @@ purchasing application.
 
 ## Installation
 
+Clone this repository and install dependencies:
+
 ```bash
+git clone https://github.com/Rajideepak2017/schemeserve-test.git
+cd schemeserve-test
 npm install
 npx playwright install chromium
 ```
