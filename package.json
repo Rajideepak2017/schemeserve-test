@@ -1,0 +1,17 @@
+{
+  "name": "schemeserve-qa-tests",
+  "version": "1.0.0",
+  "description": "Playwright frontend and API tests for SchemeServe purchasing application",
+  "scripts": {
+    "test": "playwright test",
+    "test:frontend": "playwright test tests/frontend",
+    "test:api": "playwright test tests/api",
+    "test:report": "playwright show-report",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.19.41",
+    "typescript": "^5.4.0"
+  }
+}

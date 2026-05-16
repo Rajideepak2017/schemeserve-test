@@ -1,0 +1,10 @@
+{
+  "firstName": "Jane",
+  "lastName": "Tester",
+  "address1": "10 Quality Lane",
+  "address2": "Test District",
+  "address3": "Playwright City",
+  "address4": "QA12 3AB",
+  "pet": "dog",
+  "agree": true
+}

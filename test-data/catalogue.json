@@ -1,0 +1,15 @@
+{
+  "firstItem": {
+    "id": 1,
+    "name": "Coffee Beans",
+    "price": "£20.00"
+  },
+  "secondItem": {
+    "id": 2,
+    "name": "Coffee Syrup",
+    "price": "£5.00"
+  },
+  "purchaseQuantity": 3,
+  "secondQuantity": 5,
+  "removeQuantity": 1
+}
