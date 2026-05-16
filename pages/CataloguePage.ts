@@ -1,6 +1,6 @@
 import { Page, Locator }         from '@playwright/test';
-import { BasePage }              from './BasePage.js';
-import { nav_links, app_routes } from '../utils/constants.js';
+import { BasePage }              from './BasePage.ts';
+import { nav_links, app_routes } from '../utils/constants.ts';
 
 export class CataloguePage extends BasePage {
   readonly catalogue_dropdown: Locator;
@@ -22,10 +22,6 @@ export class CataloguePage extends BasePage {
 
   async navigate(): Promise<void> {
     await this.navigateTo(nav_links.catalogue, app_routes.catalogue);
-  }
-
-  async selectItemByName(itemName: string): Promise<void> {
-    await this.catalogue_dropdown.selectOption({ label: itemName });
   }
 
   async selectFirstItem(): Promise<string> {

@@ -1,6 +1,6 @@
 import { Page, Locator }                         from '@playwright/test';
-import { BasePage }                              from './BasePage.js';
-import { nav_links, app_routes, inventory_text } from '../utils/constants.js';
+import { BasePage }                              from './BasePage.ts';
+import { nav_links, app_routes, inventory_text } from '../utils/constants.ts';
 
 export class InventoryListPage extends BasePage {
   readonly page_heading: Locator;
@@ -20,7 +20,4 @@ export class InventoryListPage extends BasePage {
       .first();
   }
 
-  async getAllListedItems(): Promise<string[]> {
-    return this.page.locator('button.primaryBtn').allTextContents();
-  }
 }

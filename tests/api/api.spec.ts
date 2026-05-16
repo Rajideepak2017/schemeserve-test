@@ -1,9 +1,9 @@
-import { test, expect }  from '../../fixtures/fixtures.js';
-import { api_endpoints } from '../../utils/constants.js';
+import { test, expect }  from '../../fixtures/fixtures.ts';
+import { api_endpoints } from '../../utils/constants.ts';
 import catalogueData     from '../../test-data/catalogue.json' with { type: 'json' };
 import contactsData      from '../../test-data/contacts.json'  with { type: 'json' };
 import reportsData       from '../../test-data/reports.json'   with { type: 'json' };
-import { CatalogueItem, ContactRecord, JournalEntry } from '../../utils/types.js';
+import { CatalogueItem, ContactRecord, JournalEntry } from '../../utils/types.ts';
 
 test('GET /catalogue — returns 200 with correct catalogue data', async ({ request }) => {
   const response       = await request.get(api_endpoints.catalogue);

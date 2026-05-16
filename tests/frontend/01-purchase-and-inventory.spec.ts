@@ -1,6 +1,6 @@
 import { test, expect }                      from '../../fixtures/fixtures.ts';
 import { deleteAllPurchases }                from '../../utils/apiHelper.ts';
-import { inventory_text }                    from '../../utils/constants.js';
+import { inventory_text }                    from '../../utils/constants.ts';
 import catalogueData from '../../test-data/catalogue.json' with { type: 'json' };
 
 test.describe('Purchase flow — Catalogue to Inventory', () => {
